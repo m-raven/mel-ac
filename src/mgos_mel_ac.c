@@ -285,7 +285,23 @@ static void mgos_mel_ac_packet_handle() {
               "12: %d\r\n"
               "13: %d\r\n"
               "14: %d\r\n"
-              "15: %d",
+              "15: %d\r\n"
+              "16: %d\r\n"
+              "17: %d\r\n"
+              "18: %d\r\n"
+              "19: %d\r\n"
+              "20: %d\r\n"
+              "21: %d\r\n"
+              "22: %d\r\n"
+              "23: %d\r\n"
+              "24: %d\r\n"
+              "25: %d\r\n"
+              "26: %d\r\n"
+              "27: %d\r\n"
+              "28: %d\r\n"
+              "29: %d\r\n"
+              "30: %d\r\n"
+              "31: %d",
                mel->packet.data[0],
                mel->packet.data[1],
                mel->packet.data[2],
@@ -301,7 +317,23 @@ static void mgos_mel_ac_packet_handle() {
                mel->packet.data[12],
                mel->packet.data[13],
                mel->packet.data[14],
-               mel->packet.data[15]));
+               mel->packet.data[15],
+               mel->packet.data[16],
+               mel->packet.data[17],
+               mel->packet.data[18],
+               mel->packet.data[19],
+               mel->packet.data[20],
+               mel->packet.data[21],
+               mel->packet.data[22],
+               mel->packet.data[23],
+               mel->packet.data[24],
+               mel->packet.data[25],
+               mel->packet.data[26],
+               mel->packet.data[27],
+               mel->packet.data[28],
+               mel->packet.data[29],
+               mel->packet.data[30],
+               mel->packet.data[31]));
           mgos_event_trigger(MGOS_MEL_AC_EV_PARAMS_CHANGED,
                              (void *) &mel->new_params);
         }

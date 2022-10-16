@@ -269,8 +269,39 @@ static void mgos_mel_ac_packet_handle() {
                mel->params.fan, mel->params.vane_vert, mel->params.vane_horiz,
                mel->params.isee));
           LOG(LL_INFO,
-              ("<< packet data 3: %d",
-               mel->packet.data[3]));
+              ("<< raw packet data: \r\n
+              0: %d\r\n
+              1: %d\r\n
+              2: %d\r\n
+              3: %d\r\n
+              4: %d\r\n
+              5: %d\r\n
+              6: %d\r\n
+              7: %d\r\n
+              8: %d\r\n
+              9: %d\r\n
+              10: %d\r\n
+              11: %d\r\n
+              12: %d\r\n
+              13: %d\r\n
+              14: %d\r\n
+              15: %d",
+               mel->packet.data[0],
+               mel->packet.data[1],
+               mel->packet.data[2],
+               mel->packet.data[3],
+               mel->packet.data[4],
+               mel->packet.data[5],
+               mel->packet.data[6],
+               mel->packet.data[7],
+               mel->packet.data[8],
+               mel->packet.data[9],
+               mel->packet.data[10],
+               mel->packet.data[11],
+               mel->packet.data[12],
+               mel->packet.data[13],
+               mel->packet.data[14],
+               mel->packet.data[15]));
           mgos_event_trigger(MGOS_MEL_AC_EV_PARAMS_CHANGED,
                              (void *) &mel->new_params);
         }

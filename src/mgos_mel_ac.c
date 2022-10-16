@@ -269,23 +269,23 @@ static void mgos_mel_ac_packet_handle() {
                mel->params.fan, mel->params.vane_vert, mel->params.vane_horiz,
                mel->params.isee));
           LOG(LL_INFO,
-              ("<< raw packet data: \r\n
-              0: %d\r\n
-              1: %d\r\n
-              2: %d\r\n
-              3: %d\r\n
-              4: %d\r\n
-              5: %d\r\n
-              6: %d\r\n
-              7: %d\r\n
-              8: %d\r\n
-              9: %d\r\n
-              10: %d\r\n
-              11: %d\r\n
-              12: %d\r\n
-              13: %d\r\n
-              14: %d\r\n
-              15: %d",
+              ("<< raw packet data: \r\n"
+              "0: %d\r\n"
+              "1: %d\r\n"
+              "2: %d\r\n"
+              "3: %d\r\n"
+              "4: %d\r\n"
+              "5: %d\r\n"
+              "6: %d\r\n"
+              "7: %d\r\n"
+              "8: %d\r\n"
+              "9: %d\r\n"
+              "10: %d\r\n"
+              "11: %d\r\n"
+              "12: %d\r\n"
+              "13: %d\r\n"
+              "14: %d\r\n"
+              "15: %d",
                mel->packet.data[0],
                mel->packet.data[1],
                mel->packet.data[2],

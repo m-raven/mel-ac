@@ -268,6 +268,9 @@ static void mgos_mel_ac_packet_handle() {
                mel->params.power, mel->params.mode, mel->params.setpoint,
                mel->params.fan, mel->params.vane_vert, mel->params.vane_horiz,
                mel->params.isee));
+          LOG(LL_INFO,
+              ("<< packet data 3: %d",
+               mel->packet.data[3]));
           mgos_event_trigger(MGOS_MEL_AC_EV_PARAMS_CHANGED,
                              (void *) &mel->new_params);
         }
